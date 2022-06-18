@@ -6,7 +6,9 @@
 
 function calculando_media_geometrica(array){
     
-    array.sort(function(a,b){return a -b})
+    array.sort(function(a,b){
+        return a -b
+    })
     
     const sumalista=array.reduce(
 
