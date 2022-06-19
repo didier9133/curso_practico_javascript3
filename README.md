@@ -2,7 +2,7 @@
 
 ...
 
-## Taller #3: promedio, mediana y moda
+## Talleres pasos a seguir:
 
 - Primer paso: definir las fórmulas
 - Segundo paso: implementar las formulas en JavaScript

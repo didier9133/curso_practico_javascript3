@@ -39,9 +39,6 @@ const lista=[
 // Sin embargo, su uso no está muy extendido en otras disciplinas.
 
 
-function array_invertido(elemento){
-    return 1/elemento
-}
 
 const lista_original=[
     15,
@@ -51,6 +48,11 @@ const lista_original=[
     12
     
 ];
+
+
+function array_invertido(elemento){
+    return 1/elemento
+}
 
 const nueva_lista=lista_original.map(array_invertido);
 
@@ -67,7 +69,6 @@ function calculando_media_armonica(array){
     
     const media_armonica=array.length/sumalista;
 
-    console.log(sumalista);
     return media_armonica;
 }
 

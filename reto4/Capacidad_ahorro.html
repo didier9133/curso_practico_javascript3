@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Reto #4  | Curso Práctico JavaScript</title>
+    <style>
+        :root{
+          --white: #FFFFFF;
+          --black: #000000;
+          --dark: #232830;
+          --very-light-pink: #C7C7C7;
+          --text-input-field: #F7F7F7;
+          --hospital-green: #9be5aa;
+          --sm: 14px;
+          --md: 16px;
+          --lg: 18px;
+
+      }  
+     
+        body{
+          margin: 0;
+          font-family: 'Quicksand', sans-serif;
+        }
+    
+        .main_container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .header{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color:var(--black);
+            font-weight: bold;
+            font-size: var(--lg);
+            
+         
+
+        }
+
+        .header h1{
+            margin-bottom: 16px;
+        }
+        
+        .header p{
+            margin-bottom: 56px;
+            margin-top: 0;
+            text-align: center;
+        }
+      
+        .item{
+            
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #3BC2C6;
+            border-radius: 15px;
+            padding: 16px;
+            width: 300px;   
+            height: auto;        
+             
+        }
+
+        .item h2{
+            margin-top: 0;
+            text-align: center;
+            font-size: var(--md);
+            font-weight: bold; 
+            margin-bottom: 4px;
+            border:1px solid #3BC2C6;
+            border-radius: 16px;
+        }
+
+        .item p{
+            margin-top: 0;
+            text-align: end;
+            font-size: var(--sm); 
+            margin-bottom: 40px;
+       }
+        
+       .container section form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+        }
+
+        .container section form label{
+            margin-bottom: 8px;
+            font-size: var(--md);
+
+        }
+         
+        
+        .container section form input{
+            margin-bottom: 20px;
+            border: 1px solid var(--very-light-pink);
+            height: 32px;
+
+        } 
+
+
+        .botones button{
+            margin-bottom: 8px;
+            border-radius: 12px;
+            height: 32px;
+            color: var(--white);
+            background-color: #3B7CC6;
+            border: none;
+            width: 100%;
+
+        }
+
+        .botones button:hover{
+            background-color: #403BC6;
+            cursor: pointer;
+            
+
+        }
+
+        .final p{
+            font-size: var(--sm);
+            color: black;
+            text-align: left;
+            margin: 0;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="main_container">
+        <header class="header">
+            <h1>Herramienta sencilla y friendly 💚</h1>
+            <p>lleva un mejor control de tu finanzas y enfocate en el ojetivo, Tu puedes!</p>
+        </header>    
+
+        <div class="container">
+            <section class="item">
+                <h2>Save and buy the dip BTC!</h2>
+                <p>by Decs_code</p>
+                
+                <form action="/" class="formulario">
+                
+                    <label for="ingresos">Escribe el monto de tus ingresos mensuales</label>
+                    
+                    <input type="number" id="ingresos" placeholder="for example: 100" class="monto">
+                     
+                    
+                    <label for="egresos">Escribe el monto de tus gastos mensuales</label>
+                    
+                    <input type="number" id="egresos" placeholder="for example: 100" class="gastos">
+
+                    
+                    <label for="ahorro">Escribe tu meta de ahorro para tu futuro</label>
+                    
+                    <input type="number" id="ahorro" placeholder="for example: 100" class="monto">
+
+                    <div class="final">   
+                        <div class="botones">
+                            <button type="button" onclick="capacidad_ahorro()">Calcular</button>
+                            
+                        </div>
+                        
+                        <p id="resultado"></p>
+                    </div>
+                    
+                   
+                </form>
+
+            </section>
+        </div>
+    </div>    
+<script src="./Capacidad_ahorro.js"></script>
+</body>
+</html>
